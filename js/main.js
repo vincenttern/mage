@@ -47,8 +47,17 @@ function load_navbar (e) {
 }
 
 
-
+// For sidenav bar popup.
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {edge: 'right'});
 });
+
+
+// For carousel.
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {fullWidth: false,
+                                            duration: 200
+                                            });
+  });

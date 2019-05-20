@@ -60,3 +60,16 @@ body {
 } */
 
 
+/* carousel */
+.carousel-item {
+    width: 27% !important;
+    height: 200px !important;
+}
+
+.carousel {
+    bottom: 70px;
+}
+
+
+
+

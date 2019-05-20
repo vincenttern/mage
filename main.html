@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
@@ -19,7 +20,7 @@
 
         <nav style="background-color:#96ceb4">
             <ul class="container">
-                <li class="logo"><a href="home.html">Mage</a></li>
+                <li class="logo"><a href="main.html">Mage</a></li>
                 <li class="search">
                     <input type="text" class="search-input" placeholder="Search">
                 </li>
@@ -45,9 +46,10 @@
                         <li><a href="#!">Help Later</a></li>
                         <li><a class="waves-effect">Helpful Videos</a></li>
                         <li><div class="divider"></div></li>
+                        <li><a class="waves-effect" href="html_pages/account.html">Account</a></li>
                         <li><a class="waves-effect" href="#!">Settings</a></li>
                         <li><a class="waves-effect" href="#!">Logoff</a></li>
-                      </ul>
+                    </ul>
                 </li>
             </ul>
         </nav>
@@ -80,30 +82,52 @@
             <li class="dropdown-li"><a href="#!">logoff</a></li>
         </ul>
 
+            <!-- Page Layout here -->
+    <div class="row" style="margin: 5px">
 
-        <div>
-            <div style="width: 50%">
-                    <iframe width="700" height="350" src="https://www.youtube.com/embed/6XZWpWYG1u0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </iframe>
-
-                <br>
-
-                <details style="padding: 10px">
-                    <summary><strong style="color: #ff6e68">- Va Lau</strong> &#8226; Hi Masters! I am in need of any advice on how to improve my shooting form.</summary>
-                    <p>As my freshmen year of playing basketball is coming to a end, I want to stay proactive during the off season and improve my shooting since that is the weakest part of my game.</p>
-                    
-                </details>
-                <!-- <textarea rows="4" cols="50" name="comment" form="usrform">
-                Enter text here...</textarea>
-
-                <form action="/action_page.php" id="usrform">
-                   
-                    <input type="submit">
-                </form> -->
+      
+            <div class="col s12 m4 l4"> <!-- Note that "m8 l9" was added -->
+              <!-- Teal page content
+      
+                    This content will be:
+                9-columns-wide on large screens,
+                8-columns-wide on medium screens,
+                12-columns-wide on small screens  -->
+    
+    
+                <iframe id="current-vid" width="400" height="278" src="https://www.youtube.com/embed/6XZWpWYG1u0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </iframe>
+    
+                    <br>
+    
+                    <details style="padding: 10px">
+                        <summary><strong style="color: #ff6e68">- Va Lau</strong> &#8226; Hi Masters! I am in need of any advice on how to improve my shooting form.</summary>
+                        <p>As my freshmen year of playing basketball is coming to a end, I want to stay proactive during the off season and improve my shooting since that is the weakest part of my game.</p>
+                        
+                    </details>
+      
             </div>
+
+            <div class="col s12 m8 l8"> <!-- Note that "m4 l3" was added -->
+
+                <h3 style="text-align: center; font-family: 'Merriweather', serif;"><a class="btn-floating btn-large pulse"><i class="material-icons" style="color: crimson">whatshot</i></a>Featured Videos</h3>
+                <!-- Grey navigation panel
+        
+                      This content will be:
+                  3-columns-wide on large screens,
+                  4-columns-wide on medium screens,
+                  12-columns-wide on small screens  -->
+                  <div class="carousel">
+                      <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                      <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                      <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                      <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                      <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+                  </div>
+        
+              </div>
+      
         </div>
-
-
 
 
             

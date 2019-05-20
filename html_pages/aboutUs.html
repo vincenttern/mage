@@ -19,7 +19,7 @@
 
         <nav style="background-color:#96ceb4">
             <ul class="container">
-                <li class="logo"><a href="../home.html">Mage</a></li>
+                <li class="logo"><a href="../main.html">Mage</a></li>
                 <li class="search">
                     <input type="text" class="search-input" placeholder="Search">
                 </li>
@@ -29,7 +29,26 @@
                 <li><a class='btn' href="aboutUs.html">About Us</a></li>
                 <li><a class='btn' href="donate.html">Donate</a></li>
                 
-                <li><a class='dropdown-trigger3' href="account.html" data-target="dropdown3"><i class="material-icons">account_circle</i></a></li>
+                <li>
+                    <a href="html_pages/account.html" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">account_circle</i></a>
+                    <ul id="slide-out" class="sidenav">
+                        <li><div class="user-view">
+                            <div class="background">
+                            <img src="images/office.jpg">
+                            </div>
+                            <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                            <a href="#name"><span class="name" style="color: black">John Doe</span></a>
+                            <a href="#email"><span class="email" style="color: black">jdandturk@gmail.com</span></a>
+                        </div></li>
+                        <li><a href="#!">History</a></li>
+                        <li><a href="#!">Help Later</a></li>
+                        <li><a class="waves-effect">Helpful Videos</a></li>
+                        <li><div class="divider"></div></li>
+                        <li><a class="waves-effect" href="account.html">Account</a></li>
+                        <li><a class="waves-effect" href="#!">Settings</a></li>
+                        <li><a class="waves-effect" href="#!">Logoff</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         
