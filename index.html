@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/basic.css">
+        <link rel="stylesheet" href="css/basic1.css">
+    </head>
+
+    <body>
+
+        <nav>
+            <div class="container"> 
+                <a href="#" class="logo">Mage</a>
+                <ul>  
+                    <li><a class='dropdown-trigger1 btn' href="#" data-target="dropdown1">Videos</a></li>
+                    <li><a class='dropdown-trigger2 btn' href="#" data-target='dropdown2'>Catogories</a></li>
+                        
+                    <li><a class='btn' href="#">About Us</a></li>
+                    <li><a class='btn'href="#">Donate</a></li>
+                    <li class="search">
+                        <input type="text" class="search-input" placeholder="Search">
+                    </li>
+                    <li><a class='sidenav-trigger btn' href="#" data-target="slide-out">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul id="slide-out" class="sidenav">
+            <li><div class="user-view">
+                <div class="background">
+                <img src="images/office.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li class="dropdown-li"><a href="#!">random</a></li>
+            <li class="dropdown-li"><a href="#!">unanswered</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li class="dropdown-li"><a href="#!">answered</a></li>
+            <li class="dropdown-li"><a href="#!">most debated</a></li>
+            <li class="dropdown-li"><a href="#!"><i class="material-icons">whatshot</i>trending</a></li>
+        </ul>
+
+        <ul id='dropdown2' class='dropdown-content'>
+            <li class="dropdown-li"><a href="#!">sports</a></li>
+            <li class="dropdown-li"><a href="#!">educational</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li class="dropdown-li"><a href="#!">mechanical</a></li>
+            <li class="dropdown-li"><a href="#!"><i class="material-icons">view_module</i>math</a></li>
+            <li class="dropdown-li"><a href="#!"><i class="material-icons">cloud</i>english</a></li>
+        </ul>
+            
+    
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.dropdown-trigger1');
+                var instances = M.Dropdown.init(elems, {
+                                                    inDuration: 430,
+                                                    outDuration: 225,
+                                                    hover: true,
+                                                    coverTrigger: false
+                                                });
+            });
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.dropdown-trigger2');
+                var instances = M.Dropdown.init(elems, {
+                                                    inDuration: 430,
+                                                    outDuration: 225,
+                                                    hover: true,
+                                                    coverTrigger: false
+                                                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {edge: 'left'});
+            });
+
+            var instance = M.Sidenav.getInstance(elem);
+
+            instance.open();
+            
+        </script>
+    </body>
+            
+</html>

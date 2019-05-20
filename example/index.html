@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+      <body>
+          <nav> 
+            
+              <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul id="slide-out" class="sidenav">
+                  <li><div class="user-view">
+                    <div class="background">
+                      <img src="images/office.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                    <a href="#name"><span class="white-text name">John Doe</span></a>
+                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                  </div></li>
+                  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                  <li><a href="#!">Second Link</a></li>
+                  <li><div class="divider"></div></li>
+                  <li><a class="subheader">Subheader</a></li>
+                  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                </ul>
+                
+          </nav>
+    
+
+              <!-- Navbar goes here -->
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+        <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+          <!-- Grey navigation panel
+  
+                This content will be:
+            3-columns-wide on large screens,
+            4-columns-wide on medium screens,
+            12-columns-wide on small screens  -->
+            <details style="padding: 10px">
+                <summary><strong style="color: #ff6e68">- Va Lau</strong> &#8226; Hi Masters! I am in need of any advice on how to improve my shooting form.</summary>
+                <p>As my freshmen year of playing basketball is coming to a end, I want to stay proactive during the off season and improve my shooting since that is the weakest part of my game.</p>
+                
+            </details>
+  
+        </div>
+  
+        <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+          <!-- Teal page content
+  
+                This content will be:
+            9-columns-wide on large screens,
+            8-columns-wide on medium screens,
+            12-columns-wide on small screens  -->
+
+
+            <iframe id="current-vid" width="700" height="350" src="https://www.youtube.com/embed/6XZWpWYG1u0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </iframe>
+
+                <br>
+
+                <details style="padding: 10px">
+                    <summary><strong style="color: #ff6e68">- Va Lau</strong> &#8226; Hi Masters! I am in need of any advice on how to improve my shooting form.</summary>
+                    <p>As my freshmen year of playing basketball is coming to a end, I want to stay proactive during the off season and improve my shooting since that is the weakest part of my game.</p>
+                    
+                </details>
+  
+        </div>
+  
+      </div>
+      </body>
+
+      
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems, {edge: 'right'});
+        });
+
+    </script>
+  </body>
+</html>

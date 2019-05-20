@@ -1,0 +1,43 @@
+.container {
+    display: flex;  /* ul is the flex container, make flexbox lays out the item from left to right.*/
+    width: 100%;
+}
+
+.search {
+    flex: 1;    /* To give navbar basic responsiveness, This results in the search item expanding and shrinking with the width of the container, meaning we won’t get the extra space in the right hand side. */
+}
+
+/* let's make the logout item grow twice as much as the others*/
+
+@media only screen and (min-width: 993px) {
+    nav a.sidenav-trigger {
+        display: flex;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .container > li {
+        flex: 1 1 50%;
+    }
+
+    .search > input {
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+    .container > li {
+      flex-basis: 1 1 100%;
+    }
+    .search {
+      order: 1;
+    }
+
+   
+}
